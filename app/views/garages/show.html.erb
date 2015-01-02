@@ -1,0 +1,10 @@
+<h1> <%= @garage.model %> </h1>
+
+<p> <%= @garage.tech %> is working on <%= @garage.model %> </p>
+
+
+<%= link_to "Edit this car", edit_garage_path %>
+
+<%= link_to "Delete this car!", :garage, method: :delete, data: { confirm: 'Are you sure you want to delete it?' } %>
+
+<%= link_to "back to list", garages_path %>

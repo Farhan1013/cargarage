@@ -1,0 +1,12 @@
+<h1>Cars in Garage</h1>
+
+<ul>
+	<% @garages.each do |g| %>
+	<li>
+		<strong> <%= g.model %> </strong> -- <%= g.tech %> <%= link_to "more details!", garage_path(g) %>
+		
+	</li>
+ 	
+ 	<% end %>
+</ul>
+
