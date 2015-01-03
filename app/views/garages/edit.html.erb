@@ -2,13 +2,16 @@
 
 <%= form_for @garage do |f| %>
 
-	Date: <%= f.text_field :date %>
-	Model: <%= f.text_field :model %>
+	Date: <%= f.date_field :date %>
+	Year: <%= f.month_field :year %>
 	Make: <%= f.text_field :make %>
-	vin: <%= f.text_field :vin %>
-	tech: <%= f.text_field :tech %>
-	parts: <%= f.text_field :parts %>
+	model: <%= f.text_field :model %>
+	price: <%= f.text_field :price %>
+	mileage: <%= f.text_field :mileage %>
+	phone: <%= f.text_field :phone %>
+	email: <%= f.email_field :email %>
 	comments: <%= f.text_field :comments %>
+	
 
 
 <%= f.submit "EDIT CAR" %>

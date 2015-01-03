@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+
+  resources :sessions
+
+  resources :users
+
+  root 'users#index'
+
   get 'garages/' => 'garages#index'
 
   get 'garages/new' => 'garages#new'
