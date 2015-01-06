@@ -58,6 +58,7 @@ development:
 test:
   sessions:
     default:
+    uri: <%= ENV['MONGOHQ_URL'] %>
       database: autoshop_test
       hosts:
         - localhost:27017
